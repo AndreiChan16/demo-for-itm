@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+# In[ ]:
+
+
 def shift_letter(letter, shift):
     alphabet_list=["A","B", "C", "D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
     if letter==" ":
@@ -17,7 +20,7 @@ shifts=int(input("How many shifts to the right?:"))
 shift_letter(letters.upper(), shifts)
     
     
-    def caesar_cipher(message, shift):
+def caesar_cipher(message, shift):
     alphabet_list=["A","B", "C", "D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
     for i in range (0, len(message)):
         if message[i]==" ":
@@ -32,7 +35,8 @@ letters=str(input("Add a word:"))
 shifts=int(input("How many shifts to the right?:"))
 
 caesar_cipher(letters.upper(), shifts)
-    def shift_by_letter(letter, shift):
+
+def shift_by_letter(letter, shift):
     alphabet_list=["A","B", "C", "D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
     if letter==" ":
             new_letter=" "
@@ -46,7 +50,8 @@ letters=str(input("Add a letter:"))
 shifts=str(input("How many shifts to the right? (letter):"))
 
 shift_by_letter(letters.upper(), shifts.upper())
-    def vigenere_cipher(message, key):
+
+def vigenere_cipher(message, key):
     alphabet_list=["A","B", "C", "D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
     for i in range (0, len(message)):
         if message[i]==" ":
@@ -61,7 +66,9 @@ shift_by_letter(letters.upper(), shifts.upper())
 letters=str(input("Add a word:"))
 shifts=str(input("How many shifts to the right?(key word):"))
 
-vigenere_cipher(letters.upper(), shifts.upper())def scytale_cipher(message, shift):
+vigenere_cipher(letters.upper(), shifts.upper())
+
+def scytale_cipher(message, shift):
     if len(message) % shift== 0:
         message= message 
     else:
@@ -74,7 +81,9 @@ vigenere_cipher(letters.upper(), shifts.upper())def scytale_cipher(message, shif
 letters=str(input("Add a word:"))
 shifts=int(input("How many shifts to the right?:"))
 
-scytale_cipher(letters.upper(), shifts)def scytale_decipher(message, shift):
+scytale_cipher(letters.upper(), shifts)
+
+def scytale_decipher(message, shift):
     for i in range (0, len(message)):
         decipher_word= message[(i // int(len(message)/shift)) +(len(message) // int(len(message)/shift)) * (i % int(len(message)/shift))]
         print(decipher_word, end="")
@@ -83,6 +92,7 @@ letters=str(input("Add a word:"))
 shifts=int(input("How many shifts to the right?:"))
 
 scytale_decipher(letters.upper(), shifts)
+
 
 # In[ ]:
 
