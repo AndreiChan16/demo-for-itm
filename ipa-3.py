@@ -1,5 +1,9 @@
 #!/usr/bin/env python
 # coding: utf-8
+
+# In[ ]:
+
+
 def relationship_status(from_member, to_member, social_graph):
     following= False
     follower= False
@@ -141,7 +145,9 @@ board8=[
 
 
 
-tic_tac_toe(board4)leg1 = {
+tic_tac_toe(board4)
+
+leg1 = {
             ("ust","admu"):{
                  "travel_time_mins":10
              },
@@ -208,6 +214,14 @@ def eta(first_stop, second_stop, legs):
 first_stops=input("Where is the stop you are from?")
 second_stops= input("Where is the stop you are going to?")
 eta(first_stops, second_stops, leg3)
+
+
+
+# In[ ]:
+
+
+
+
 
 # In[ ]:
 
