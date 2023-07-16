@@ -199,7 +199,7 @@ def eta(first_stop, second_stop, legs):
                 while counter < label:
                     total_time.append(legs[list(legs)[counter+1]]["travel_time_mins"])
                     counter+=1
-                print(sum(total_time))
+                return(sum(total_time))
             elif list(legs).index(list(legs)[i])%len(legs)> list(legs).index(list(legs)[label])%len(legs):
                 total_time.append(legs[list(legs)[i]]["travel_time_mins"])
                 counter=i
